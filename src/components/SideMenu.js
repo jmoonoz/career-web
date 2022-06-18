@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Offcanvas } from 'react-bootstrap'
+import { Button, Offcanvas, Form } from 'react-bootstrap'
 
 function SideMenu() {
     const [show, setShow] = useState(false);
@@ -18,8 +18,16 @@ function SideMenu() {
                     <Offcanvas.Title>Offcanvas</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    Some text as placeholder. In real life you can have the elements you
-                    have chosen. Like, text, images, lists, etc.
+                    <Form>
+                        <Form.Group>
+                            <Form.Label>First Name</Form.Label>
+                            <Form.Control type="text" placeholder="First Name" />
+                            <Form.Label>Last Name</Form.Label>
+                            <Form.Control type="text" placeholder="Last Name" />
+                        </Form.Group>
+
+                    </Form>
+
                 </Offcanvas.Body>
             </Offcanvas>
         </>

@@ -1,31 +1,93 @@
 import React, { useState } from 'react'
 import { Button, Offcanvas, Form } from 'react-bootstrap'
 
-function SideMenu() {
+function SideMenu(props) {
+    // hook used for side menu, false no show / true will show
     const [show, setShow] = useState(false);
 
+    // use case for form elements
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [linkdin, setLinkedin] = useState("");
+    // to show weather results was succesful or not
+    const [message, setMessage] = useState("");
+
+    // handle function for side menu
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    // handle function for submit Form
+    // if succesfull itll send a 200 message, if not a 400 message
+
+    let handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            let res = await fetch("https://httpbin.org/post", {
+                method: "POST",
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    linkdin: linkdin
+                }),
+            });
+
+            let resJson = await res.json();
+
+            if (res.status === 200) {
+                setName("");
+                setEmail("");
+                setLinkedin("");
+                setMessage("sucesfully submitted");
+                console.log(res.status);
+            } else {
+                setMessage("Some error occured");
+            }
+
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
+
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
+            <div className="jobTitle" onClick={handleShow}>
+                <h5>
+                    {props.jobTitle}
+                </h5>
+            </div>
+            {/* <Button variant="primary" onClick={handleShow}>
                 Launch
-            </Button>
+            </Button> */}
+            {/* <div>
+                {props.description}
+            </div> */}
 
             <Offcanvas show={show} placement="end" onHide={handleClose}>
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                    <Offcanvas.Title>{props.jobTitle}</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <Form>
-                        <Form.Group>
-                            <Form.Label>First Name</Form.Label>
-                            <Form.Control type="text" placeholder="First Name" />
-                            <Form.Label>Last Name</Form.Label>
-                            <Form.Control type="text" placeholder="Last Name" />
+                    <h6>{props.description}</h6>
+                    <Form onSubmit={handleSubmit}>
+                        <Form.Group controlId="name">
+                            <Form.Label for="name" >Name</Form.Label>
+                            <Form.Control type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)}></Form.Control>
+                        </Form.Group>
+                        <Form.Group controlId="email">
+                            <Form.Label for="email">Email</Form.Label>
+                            <Form.Control type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}></Form.Control>
+                        </Form.Group>
+                        <Form.Group controlId="linkedin">
+                            <Form.Label for="linkedin" >Linkedin Profile</Form.Label>
+                            <Form.Control type="url" placeholder="Enter your full Linkedin URL" value={linkdin} onChange={(e) => setLinkedin(e.target.value)}></Form.Control>
                         </Form.Group>
 
+                        <Button variant="danger" type="submit">
+                            Submit Application
+                        </Button>
+                        {/* <button type="submit">Create</button> */}
+                        <div className="message">{message ? <p>{message}</p> : null}</div>
                     </Form>
 
                 </Offcanvas.Body>

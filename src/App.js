@@ -7,17 +7,20 @@ import Team from "./components/Team"
 import Jobs from "./components/Jobs"
 import Mission from "./components/Mission"
 import Footer from "./components/Footer"
+import { Container } from "react-bootstrap"
 
 function App() {
   return (
     <div className="App">
       <Nav />
       <Hero />
-      <About />
-      <Values />
-      <Team />
-      <Jobs/>
-      <Mission />
+      <Container>
+        <About />
+        <Values />
+        <Team />
+        <Jobs />
+        <Mission />
+      </Container>
       <Footer />
     </div>
   );

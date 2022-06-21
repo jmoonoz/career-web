@@ -25,11 +25,16 @@ function Jobs() {
                     </h1>
                 </Col>
             </Row>
-            <Container className="job-listing ">
-                <Row className="section-margin">
-                    {jobInfo}
+           
+                <Row >
+                    <Col sm={2}></Col>
+                    <Col>
+                        <Row>
+                            {jobInfo}
+                        </Row>
+                    </Col>
+                    <Col sm={2}></Col>
                 </Row>
-            </Container>
 
             {/* <SideMenu jobTitle="front end developer" /> */}
 

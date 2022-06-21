@@ -8,7 +8,7 @@ function Team() {
     const team = teamData.map((data, key) => {
         return (
 
-            <Col className="team-member" key={key} xs={6} md={2} >
+            <Col className="team-member" key={key} sm={6} md={3} >
                 <img className="team-headshot" src={data.headshot} />
                 <h6 className="team-name">
                     {data.name}
@@ -31,7 +31,12 @@ function Team() {
                 </Col>
             </Row>
             <Row className="section-margin">
-                {team}
+                <Col>
+                    <Row className="grid-container">
+                        {team}
+                    </Row>
+                </Col>
+                {/* <Col sm={1}></Col> */}
             </Row>
         </section>
 

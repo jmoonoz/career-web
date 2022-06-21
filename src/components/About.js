@@ -8,18 +8,21 @@ function About() {
             <Row>
                 <Col md={2}>
                 </Col>
-                <Col  sm={12} md={10}>
+                <Col sm={12} md={10}>
                     <h1 className="section-title">
-                        Qvin
+                        About
                     </h1>
                 </Col>
             </Row>
             <Row>
                 <Col md={2}>
                 </Col>
-                <Col className="section-title" sm={12} md={5}>
-                    <p>
-                        lorin epsim
+                <Col sm={12} md={5}>
+                    <p className="paragraph-text">
+                        We thrive ourselves with the pleasure of knowing the joy our digital work brings Billions across the world. Working with top names like Disney®, Pixar®, Lucas Films®, A24 ® and many more. We look to continue our passion of creating digital art for generations to come.
+                    </p>
+                    <p className="paragraph-text">
+                        No one person can do every thing, but a team can do anything. At Moonoz Studios, you will move forward into the future of digital art and establish yourself as a renown Designer, Leader and overall creative artist.
                     </p>
                 </Col>
                 <Col sm={12} md={5}>

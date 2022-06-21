@@ -1,3 +1,10 @@
 .section-title{
   padding-left: 30px;
+  font-size: 40px;
+}
+section{
+  padding: 3rem 0;
+}
+.section-margin{
+  margin: 0 178px !important;
 }

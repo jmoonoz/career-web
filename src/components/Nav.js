@@ -6,7 +6,7 @@ export default function nav() {
     return (
         <Navbar fixed="top"  expand="lg" >
             <Container className="d-flex">
-                <Navbar.Brand href="#">Qvin</Navbar.Brand>
+                <Navbar.Brand href="#">Moonoz Studios</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" >
                     <Nav className="ml-auto">

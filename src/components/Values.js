@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-// reads data from a json file
+import "../style/value.scss"
 import data from "../data/values.json"
 
 function Values() {
@@ -9,25 +9,25 @@ function Values() {
     const value = data.map((data, key) => {
         return (
             <Col key={key} md={2}>
-                <h4>
+                <h3>
                     {data.valueTitle}
-                </h4>
-                <p>
+                </h3>
+                <div className="paragraph-text">
                     {data.valueDescription}
-                </p>
+                </div>
             </Col>
         )
     })
 
     return (
         <section id='Values' >
-        <Row>
-            <Col md={2}></Col>
-            <Col md={10}>
-                <h1 className="section-title">Value</h1>
-            </Col>
-        </Row>
-        
+            <Row>
+                <Col md={2}></Col>
+                <Col md={10}>
+                    <h1 className="section-title">Values we work with</h1>
+                </Col>
+            </Row>
+
             <Row>
                 <Col md={2}>
                 </Col>

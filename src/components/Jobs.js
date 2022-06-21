@@ -1,13 +1,13 @@
 import React from 'react'
 import SideMenu from './SideMenu'
 import { Col, Container, Row } from "react-bootstrap"
-import "../style/job.css"
+import "../style/job.scss"
 import data from "../data/jobs.json"
 
 const jobInfo = data.map((data, key) => {
     return (
         <Col sm={6}>
-            <SideMenu key={key} jobTitle={data.jobTitle} description={data.desc} />
+            <SideMenu key={key} jobTitle={data.jobTitle} loc={data.location} description={data.desc} />
         </Col>
     )
 }
@@ -17,10 +17,16 @@ const jobInfo = data.map((data, key) => {
 function Jobs() {
     return (
         <section id="Jobs">
-            <h1>this is the job section</h1>
-            <h1>Apply Now</h1>
-            <Container>
-                <Row>
+            <Row>
+                <Col sm={2}></Col>
+                <Col sm={10}>
+                    <h1 className="section-title">
+                        Apply Now
+                    </h1>
+                </Col>
+            </Row>
+            <Container className="job-listing ">
+                <Row className="section-margin">
                     {jobInfo}
                 </Row>
             </Container>

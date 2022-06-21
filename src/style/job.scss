@@ -1,0 +1,19 @@
+#job{
+    display: flexbox;
+    
+    text-align: center !important;
+
+}
+.jobTitle{
+    text-decoration-line: underline;
+    color: rgb(0, 0, 0) !important;
+    &:hover{
+        cursor: pointer;
+        color: #064ab0 !important;
+    }
+}
+
+// .job-listing{
+//     text-align: center;
+
+// }

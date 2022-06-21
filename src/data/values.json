@@ -1,22 +1,22 @@
 [
     {
         "id": 0,
-        "valueTitle": "Value",
-        "valueDescription": "here to help"
+        "valueTitle": "Growth",
+        "valueDescription": "We know where we were yesterday, now lets see where we can go tomorrow. We encourage to let your curiosity take control of you mind and explore what’s beyond infinity."
     },
     {
         "id": 1,
-        "valueTitle": "Value",
-        "valueDescription": "here to help"
+        "valueTitle": "Diversity",
+        "valueDescription": "We welcome all to work with us, and take pride in our diverse community. Where prejudice and hate are the type of things you won’t see working here."
     },
     {
         "id": 2,
-        "valueTitle": "Value",
-        "valueDescription": "here to help"
+        "valueTitle": "Self Care",
+        "valueDescription": "We encourage our team to give their best, but we can’t expect that when they don’t feel at their best. With our unlimited PTO we want our employees to recharge and come back to the best of themselves."
     },
     {
         "id": 3,
-        "valueTitle": "Value",
-        "valueDescription": "here to help"
+        "valueTitle": "Support",
+        "valueDescription": "We all make mistakes, it’s okay to find yourself in a tough situation. We work together to encourage each other to overcome challenges and move forward STRONGER!"
     }
 ]

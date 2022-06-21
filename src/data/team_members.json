@@ -1,0 +1,125 @@
+[
+    {
+        "id": 0,
+        "name": "Joel Munoz",
+        "title": "Technical Director",
+        "headshot": "https://media-exp1.licdn.com/dms/image/sync/C5627AQF0bbW4jqeNFw/articleshare-shrink_480/0/1654704866613?e=1656388800&v=beta&t=0vZ6vr27vOEiZ-ku10yLixPaOjKfbB_rPv2fJRhdGwk"
+
+    },
+    {
+        "id": 1,
+        "name": "Jeff Lehrman",
+        "title": "Design Lead Specialist",
+        "headshot": "https://media-exp1.licdn.com/dms/image/C5603AQFW_jtNJyUqcw/profile-displayphoto-shrink_400_400/0/1641417127467?e=1661385600&v=beta&t=DFGXTcxw8UO8yn54P9Me4pftnl1rShnFhg48lP8Bs4U"
+    },
+    {
+        "id": 2,
+        "name": "Inderpreet Buttar",
+        "title": "Software Designer",
+        "headshot": "https://media-exp1.licdn.com/dms/image/C5603AQFOlAu66Kx1nQ/profile-displayphoto-shrink_400_400/0/1555393770111?e=1661385600&v=beta&t=HPfxf-ZNicZzPz9yEhyfbslS0fH6bWORpPWs_-eAuSI"
+    },
+    {
+        "id": 3,
+        "name":"Nicole Copp",
+        "title": "Human Resources",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C5603AQELQaIcQoj2ew/profile-displayphoto-shrink_400_400/0/1580949877479?e=1661385600&v=beta&t=cawwpAWWUlD8bI0bOEVRXaZUka1NNd7A87REigJHHLM"
+
+    },
+    {
+        "id": 4,
+        "name":"Alfredo Coyotl",
+        "title":"Design researcher",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C5603AQESTvuk5DZgRg/profile-displayphoto-shrink_400_400/0/1586314510403?e=1661385600&v=beta&t=3r5t5h5v_SO2JsnnmP6ccElhpN2RWmMea8lChJeLhSY"
+    },
+    {
+        "id": 5,
+        "name":"Paolo Viale",
+        "title":"Finacial Specialists",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C5603AQFoVQb7ds7KwQ/profile-displayphoto-shrink_400_400/0/1649971927465?e=1661385600&v=beta&t=SbsVuuew6pPt7NYatT6xrFFHu6lu57wvDYzP3YnZ-T8"
+    },
+    {
+        "id": 6,
+        "name":"Philip Bocog",
+        "title":"Head Security Specialists",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C5603AQFyHr8yk7XZRw/profile-displayphoto-shrink_400_400/0/1649769237208?e=1661385600&v=beta&t=40rV26azHYgyu317m44bBk8m3eycAjr-mrwGPquDpKA"
+    },
+    {
+        "id": 7,
+        "name":"Chris Soriano",
+        "title":"IT Desktop Engineer",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C4E03AQGnAu3nvLZuzQ/profile-displayphoto-shrink_400_400/0/1539056847830?e=1661385600&v=beta&t=d7vMSPoRJLmFSL8eRWgqdTadwjbJKl2S99T4PxjBAj8"
+    },
+    {
+        "id": 8,
+        "name":"Vanessa Guevara",
+        "title":"Data Specialist",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C5603AQEcgC8EOgH8IQ/profile-displayphoto-shrink_400_400/0/1610494834129?e=1661385600&v=beta&t=OkCzDarJPe52BG72xeuZOtRZ5f8uyczO_0EKj1ILOjQ"
+    },
+    {
+        "id": 9,
+        "name":"Sam Ruiz",
+        "title":"Front End Developer",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C5603AQGJWsyaiZ4p6g/profile-displayphoto-shrink_400_400/0/1631299286253?e=1661385600&v=beta&t=hmuKV1EWggg-YFBEBcEai5sNpw4ohzY9M30ddg_snvw"
+    },
+    {
+        "id": 10,
+        "name":"Ryan Finazzo",
+        "title":"Software Engineer",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C4E03AQG0cR1m_cqsbg/profile-displayphoto-shrink_400_400/0/1560919391410?e=1661385600&v=beta&t=_vgEhqDqMsvj7e4OmYgLqzaohwaxXoOMNZjtsPC9d2Y"
+    },
+    {
+        "id": 11,
+        "name":"Chris Beresford",
+        "title":"Human Resources",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C5603AQEGkqffpc048Q/profile-displayphoto-shrink_400_400/0/1590686482219?e=1661385600&v=beta&t=cNPbYB8iR1nIc2Wj5UYUChuEJ3xTUPEjYe5ffYQAA7M"
+    },
+    {
+        "id": 12,
+        "name":"Sergio Cortez",
+        "title":"Software Engineer",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C4D03AQGAJJNl5VIqCQ/profile-displayphoto-shrink_400_400/0/1517029876817?e=1661385600&v=beta&t=qpqEZraLtwgJk0F8NrGRTvk77Dts1myo7_gvHjSId_k"
+    },
+    {
+        "id": 13,
+        "name":"Joe Marsili",
+        "title":"Software Engineer",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C5603AQG8QKDkRRq3rw/profile-displayphoto-shrink_400_400/0/1642705825882?e=1661385600&v=beta&t=d80wL7_Yp944C4QumiPyFkkq-t-y-0qpXFkJ3yJRYHs"
+    },
+    {
+        "id": 14,
+        "name":"Oneeb Khan",
+        "title":"Head Secuirty Specialist",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C5603AQFB3ETq77W2fg/profile-displayphoto-shrink_400_400/0/1637720447643?e=1661385600&v=beta&t=ognOxDIgFxg_FVAWYc9G2Z0LFlzNR63O4sxWh5HGyd8"
+    },
+    {
+        "id": 15,
+        "name":"Greg Barish",
+        "title":"Cheif Tech Specialist",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C4D03AQG0QQM8xzz9xw/profile-displayphoto-shrink_400_400/0/1516851824618?e=1661385600&v=beta&t=fXFs8kX0La5yP-U1TnMz_qKxouDRAaGaKVZAmq8OxW0"
+    },
+    {
+        "id": 16,
+        "name":"Shahbaz Khan",
+        "title":"Lead Software Engineer",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C5603AQHxnBKzF5xOnQ/profile-displayphoto-shrink_400_400/0/1517414056581?e=1661385600&v=beta&t=MrCptI1CsYiRHWpDslNyn97XWUkY0sdyS1ibaPOJWNY"
+    },
+    {
+        "id": 17,
+        "name":"Miguel Huerta",
+        "title":"Lead Character Shader",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C5603AQGGtctzl1AIRQ/profile-displayphoto-shrink_400_400/0/1610393144827?e=1661385600&v=beta&t=kMd8WAf3OMmQADt_5Wwc24LiLlhSfHec_oAattMyeO0"
+    },
+    {
+        "id": 18,
+        "name":"Bryan Zarate",
+        "title":"Sound Director",
+        "headshot":"https://media-exp1.licdn.com/dms/image/D5603AQFz8i-9Q00Qlg/profile-displayphoto-shrink_400_400/0/1649714441815?e=1661385600&v=beta&t=OyJ8RAJxriC3xUpC9n4mff2Nh37s0nOuJ2fNNW6qp5Q"
+    },
+    {
+        "id": 19,
+        "name":"Johnathan Locsin",
+        "title":"Media Director",
+        "headshot":"https://media-exp1.licdn.com/dms/image/C5103AQG5yKBKEEptnQ/profile-displayphoto-shrink_400_400/0/1516613257933?e=1661385600&v=beta&t=aOlHBTAFm31WPpKQ9C3WKTc8jPMW20U1O3dI3pN70ig"
+    }
+
+]

@@ -51,11 +51,11 @@ function SideMenu(props) {
 
     return (
         <>
-            <div className="jobTitle" onClick={handleShow}>
+            <a className="jobTitle" onClick={handleShow}>
                 <h5>
-                    {props.jobTitle}
+                    {props.jobTitle}, {props.loc}
                 </h5>
-            </div>
+            </a>
             {/* <Button variant="primary" onClick={handleShow}>
                 Launch
             </Button> */}

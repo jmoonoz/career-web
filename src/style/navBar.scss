@@ -1,4 +1,6 @@
-// $navbar-light: {
-//     "color": azure !important;
-// };
-@import "node_modules/bootstrap/scss/bootstrap";
+.navbar-brand{
+    font-weight:700;
+}
+.navbar-light {
+    color: #fff !important;
+}

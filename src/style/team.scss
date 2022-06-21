@@ -1,0 +1,35 @@
+.team-member{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    
+}
+.team-headshot{
+    border-radius:50%;
+    width:100%;
+    filter: grayscale(1);
+
+    &:hover{
+        filter: grayscale(0);
+    }
+}
+
+.team-title{
+    font-weight:300;
+    font-size: 10px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .team-section{
+        margin: 0 !important;
+    }
+    .team-member{
+        margin-bottom: 10px !important;
+    }
+    
+}

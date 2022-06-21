@@ -66,6 +66,8 @@ function SideMenu(props) {
             <Offcanvas show={show} placement="end" onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>{props.jobTitle}</Offcanvas.Title>
+                    <br/>
+                    <h6>{props.loc}</h6>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <h6>{props.description}</h6>

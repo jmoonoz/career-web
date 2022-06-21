@@ -1,20 +1,26 @@
 .hero-banner {
     height: 500px;
-    /* background-image: url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); */
-    /* background-size: cover; */
-    /* background-position: center center; */
     background-color: rgba(230, 3, 3, 0.725);
     display: flex;
     align-items: center;
     justify-content:space-between;
     color: aliceblue;
 }
+.hero-column-content{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items:center !important;
+  justify-content: space-between !important;
+}
+.hero-career-text{
+  font-size:16px !important;
+  font-weight: 500 !important;
+}
+.Typewriter{
+  font-size:20px;
+  font-weight: 500;
+}
 
-  .hero-content{
-    display: flexbox;
-    justify-items: center !important;
-    
-  }
   .hero-content h1{
     font-weight: 800;
   }

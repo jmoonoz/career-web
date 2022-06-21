@@ -1,18 +1,19 @@
 .team-member{
-    display: flex;
-    justify-items: center;
-    justify-content: center;
+    display: flexbox;
+    justify-items: center !important;
+    justify-content: center !important;
     flex-direction: column;
     text-align: center;
     // width: 25%;
 }
-.team-grid-group{
-    // display:grid;
-    // gap: 10px;
+.grid-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 30px;
 }
 .team-headshot{
     border-radius:50%;
-    width:100%;
+    width:80%;
     filter: grayscale(1);
 
     &:hover{
@@ -33,6 +34,10 @@
     }
     .team-member{
         margin-bottom: 10px !important;
+    }
+    .grid-container{
+        grid-template-columns: 50% 50% ;
+        gap: 10px;
     }
     
 }

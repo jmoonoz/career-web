@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Col, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import Typewriter from "typewriter-effect"
 import "../style/mission.scss"
 
@@ -39,10 +39,6 @@ function Mission() {
                 </Col>
                 <Col md={2} ></Col>
             </Row>
-
-
-
-
         </section>
     )
 }

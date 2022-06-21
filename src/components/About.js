@@ -25,8 +25,11 @@ function About() {
                         No one person can do every thing, but a team can do anything. At Moonoz Studios, you will move forward into the future of digital art and establish yourself as a renown Designer, Leader and overall creative artist.
                     </p>
                 </Col>
-                <Col sm={12} md={5}>
+                <Col sm={12} md={4}>
                     3d model
+                </Col>
+                <Col md={1}>
+empty
                 </Col>
             </Row>
         </section>

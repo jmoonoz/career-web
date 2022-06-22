@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Offcanvas, Form } from 'react-bootstrap'
+import { Button,Container, Offcanvas, Form } from 'react-bootstrap'
 
 function SideMenu(props) {
     // hook used for side menu, false no show / true will show
@@ -52,7 +52,7 @@ function SideMenu(props) {
     return (
         <>
             {/* job link that will apprear on the page */}
-            <a className="job-link" href="" onClick={handleShow}>
+            <a className="job-link" onClick={handleShow}>
                 <h5 className="job-title">
                     {props.jobTitle}, {props.loc}
                 </h5>
@@ -60,10 +60,14 @@ function SideMenu(props) {
             {/* code for the side menu */}
             <Offcanvas show={show} placement="end" onHide={handleClose}>
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>{props.jobTitle}</Offcanvas.Title>
-                    <br />
-                    <h6>{props.loc}</h6>
+                    <Offcanvas.Title>
+                    {props.jobTitle} 
+                <p className="offcanvas-job-location">{props.loc}</p>
+                    </Offcanvas.Title>
                 </Offcanvas.Header>
+                <Container>
+
+                </Container>
                 <Offcanvas.Body>
                     <h6>{props.description}</h6>
                     <Form onSubmit={handleSubmit}>

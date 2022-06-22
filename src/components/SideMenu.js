@@ -51,22 +51,17 @@ function SideMenu(props) {
 
     return (
         <>
-            <a className="jobTitle" onClick={handleShow}>
-                <h5>
+            {/* job link that will apprear on the page */}
+            <a className="job-link" href="" onClick={handleShow}>
+                <h5 className="job-title">
                     {props.jobTitle}, {props.loc}
                 </h5>
             </a>
-            {/* <Button variant="primary" onClick={handleShow}>
-                Launch
-            </Button> */}
-            {/* <div>
-                {props.description}
-            </div> */}
-
+            {/* code for the side menu */}
             <Offcanvas show={show} placement="end" onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>{props.jobTitle}</Offcanvas.Title>
-                    <br/>
+                    <br />
                     <h6>{props.loc}</h6>
                 </Offcanvas.Header>
                 <Offcanvas.Body>

@@ -4,8 +4,11 @@
     text-align: center !important;
 
 }
-.jobTitle{
+.job-title{
     text-decoration-line: underline;
+    margin-bottom: 2rem;
+}
+.job-link{
     color: rgb(0, 0, 0) !important;
     &:hover{
         cursor: pointer;
@@ -13,7 +16,8 @@
     }
 }
 
-// .job-listing{
-//     text-align: center;
+// mobile screen size
+@media screen and (min-width: 600px){
 
-// }
+    
+}

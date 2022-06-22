@@ -34,7 +34,7 @@ function Mission() {
                 <Col md={2}></Col>
                 <Col md={8}>
                     <p className="paragraph-text" >
-                        we are here to user in a new era of design.
+                    Our mission is to continue captivating the amazement of billions through our cutting edge digital art. To dig deep into our curiosity and convert pixels into real life. We know where we were yesterday, now let’s see where we can go tomorrow.
                     </p>
                 </Col>
                 <Col md={2} ></Col>

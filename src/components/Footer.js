@@ -1,11 +1,20 @@
 import React from 'react'
+import { Container, Col, Row } from 'react-bootstrap'
 
 function Footer() {
+    const date = new Date().getFullYear();
     return (
         <section>
-            <h1>this is the footer</h1>
+            <Row>
+                <Col md={2}>
+
+                </Col>
+                <Col md={8} >
+                    Moonoz Studios ©{date}
+                </Col>
+            </Row>
         </section>
-        
+
     )
 }
 

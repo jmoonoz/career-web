@@ -25,11 +25,12 @@ function About() {
                         No one person can do every thing, but a team can do anything. At Moonoz Studios, you will move forward into the future of digital art and establish yourself as a renown Designer, Leader and overall creative artist.
                     </p>
                 </Col>
+                {/* 3d model to be displayed in about*/}
                 <Col sm={12} md={4}>
-                    3d model
+                    {/* <Spline scene="https://prod.spline.design/cHg2R-qK-fCM3j8f/scene.splinecode" /> */}
                 </Col>
                 <Col md={1}>
-empty
+                    empty
                 </Col>
             </Row>
         </section>

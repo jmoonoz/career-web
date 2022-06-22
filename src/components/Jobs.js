@@ -1,6 +1,6 @@
 import React from 'react'
 import SideMenu from './SideMenu'
-import { Col, Container, Row } from "react-bootstrap"
+import { Col, Row } from "react-bootstrap"
 import "../style/job.scss"
 import data from "../data/jobs.json"
 
@@ -35,9 +35,6 @@ function Jobs() {
                     </Col>
                     <Col sm={2}></Col>
                 </Row>
-
-            {/* <SideMenu jobTitle="front end developer" /> */}
-
         </section>
 
     )

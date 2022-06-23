@@ -8,29 +8,29 @@
     },
     {
         "id":1,
-        "jobTitle": "Science Lead",
-        "desc": "best job ever",
+        "jobTitle": "Technical Assistant",
+        "desc": "Youll be working along the sharpest and curiously creative group of individuals. Be knowledable of microsoft word, Excell abd Mac software. Knowledge of animation pipeline is a plus.",
         "location": "San Francisco, CA",
         "url": "ScienceLead"
     },
     {
         "id":2,
         "jobTitle": "Product Lead",
-        "desc": "best job ever",
+        "desc": "Work closely with the Build and QA teams on improvements to the test and release infrastructure. Collaborate with other teams to improve the developer experience working within the studio codebase.",
         "location": "San Mateo, CA",
         "url": "ProductLead"
     },
     {
         "id":3,
-        "jobTitle": "Medical Lead",
-        "desc": "best job ever",
+        "jobTitle": "Software Lead",
+        "desc": "Collaborate with artists and other engineers to provide innovative technical solutions that extend our artistic and engineering reach.",
         "location": "Palo Alto, CA",
         "url": "MedicalLead"
     },
     {
         "id":4,
-        "jobTitle": "Senior Developer ",
-        "desc": "best job ever",
+        "jobTitle": "Executive Assistant ",
+        "desc": "Serve as backup for department coordinator functions, such as meeting scheduling, agenda management for leadership meetings, and notes as the need arises",
         "location": "Oakland, CA",
         "url": "SeniorDeveloper"
     }

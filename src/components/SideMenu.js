@@ -53,8 +53,8 @@ function SideMenu(props) {
     return (
         <>
             {/* job link that will apprear on the page */}
-            <a className="job-link" onClick={handleShow}>
-                <h5 className="job-title">
+            <a onClick={handleShow}>
+                <h5 className="job-title link-detail">
                     {props.jobTitle} {props.loc}
                 </h5>
             </a>

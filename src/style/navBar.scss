@@ -1,18 +1,26 @@
-.navbar-brand{
-    font-weight:700;
+.navbar-brand {
+  font-weight: 700;
 }
-.navbar{
-    color: #fff !important;
-}
-
-
-.navbar-collapse{
-    justify-content:end;
-}
-.navbar-dark{
-    color: #fff !important;
-    backdrop-filter: blur(8px);
-    background-color: #1f2a3756 !important;
+.navbar {
+  color: #fff !important;
 }
 
+.navbar-collapse {
+  justify-content: end;
+}
+.navbar-dark {
+  color: #fff !important;
+  backdrop-filter: blur(8px);
+  background-color: #1f2a3756 !important;
+}
 
+@media screen and (max-width: 500px) {
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: flex-end !important;
+  }
+}

@@ -8,7 +8,7 @@
     text-decoration-line: underline;
     margin-bottom: 2rem;
 }
-.job-link{
+.link-detail{
     color: rgb(255, 255, 255) !important;
     &:hover{
         cursor: pointer;
@@ -34,7 +34,7 @@
     margin-top:10px;
 }
 .offcanvas-body{
-    margin-top: 0 !important;
+    padding-top: 0px !important;
 }
 
 

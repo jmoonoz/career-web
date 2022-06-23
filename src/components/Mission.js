@@ -14,11 +14,11 @@ function Mission() {
                 </Col>
                 <Col md={10}>
                     <h1 className="section-title">
-                        Mooñoz {leftBracket}
+                        Mooñoz Studios {leftBracket}
                         <Typewriter
                             className="type-text"
                             onInit={(typewriter) => {
-                                typewriter.typeString(" moon-yoos")
+                                typewriter.typeString(" moon-yoos Stoo-De-oos")
                                     .pauseFor(2000)
                                     .deleteAll()
                                     .start();

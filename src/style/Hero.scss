@@ -1,6 +1,6 @@
 .hero-banner {
-    height: 500px;
-    background-color: rgba(230, 3, 3, 0.725);
+    height: 100vh;
+    /* background-color: rgba(230, 3, 3, 0.725); */
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -11,6 +11,7 @@
   flex-direction: column !important;
   align-items:center !important;
   justify-content: space-between !important;
+  height:400px;
 }
 .hero-career-text{
   font-size:16px !important;
@@ -21,6 +22,22 @@
   font-weight: 500;
 }
 
-  .hero-content h1{
+.btn-light {
+  color: #fff !important;
+  background-color: transparent !important;
+  border-color: #f8f9fa;
+  &:hover {
+    color: #000 !important;
+    background-color: #fff !important;
+  }
+}
+.retro-moonoz{
+  width: 80%;
+}
+.hero-content {
+  height: 80%;
+  h1{
     font-weight: 800;
   }
+}
+

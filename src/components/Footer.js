@@ -9,8 +9,13 @@ function Footer() {
                 <Col md={2}>
 
                 </Col>
-                <Col md={8} >
+                <Col className="footer-content" md={8} >
+                <a href="#Hero">
                     Moonoz Studios ©{date}
+                </a>
+                </Col>
+                <Col md={2}>
+
                 </Col>
             </Row>
         </section>

@@ -1,6 +1,18 @@
 .navbar-brand{
     font-weight:700;
 }
-.navbar-light {
+.navbar{
     color: #fff !important;
 }
+
+
+.navbar-collapse{
+    justify-content:end;
+}
+.navbar-dark{
+    color: #fff !important;
+    backdrop-filter: blur(8px);
+    background-color: #1f2a3756 !important;
+}
+
+

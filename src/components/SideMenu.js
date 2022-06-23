@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Button,Container, Offcanvas, Form } from 'react-bootstrap'
+import { Button, Container, Offcanvas, Form } from 'react-bootstrap'
+import "../style/job.scss"
 
 function SideMenu(props) {
     // hook used for side menu, false no show / true will show
@@ -54,15 +55,15 @@ function SideMenu(props) {
             {/* job link that will apprear on the page */}
             <a className="job-link" onClick={handleShow}>
                 <h5 className="job-title">
-                    {props.jobTitle}, {props.loc}
+                    {props.jobTitle} {props.loc}
                 </h5>
             </a>
             {/* code for the side menu */}
             <Offcanvas show={show} placement="end" onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>
-                    {props.jobTitle} 
-                <p className="offcanvas-job-location">{props.loc}</p>
+                        {props.jobTitle}
+                        <p className="offcanvas-job-location">{props.loc}</p>
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Container>
@@ -84,10 +85,11 @@ function SideMenu(props) {
                             <Form.Control type="url" placeholder="Enter your full Linkedin URL" value={linkdin} onChange={(e) => setLinkedin(e.target.value)}></Form.Control>
                         </Form.Group>
 
-                        <Button variant="danger" type="submit">
-                            Submit Application
-                        </Button>
-                        {/* <button type="submit">Create</button> */}
+                        <div className="button-location">
+                            <Button role="submit button" variant="light" type="submit">
+                                Submit Application
+                            </Button>
+                        </div>
                         <div className="message">{message ? <p>{message}</p> : null}</div>
                     </Form>
 

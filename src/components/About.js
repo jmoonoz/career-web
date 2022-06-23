@@ -1,6 +1,8 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
+import { Col, Row, Image } from 'react-bootstrap'
+import moonozStudios from "../image/moonozStudioLogo.png"
 
+ 
 
 function About() {
     return (
@@ -27,10 +29,9 @@ function About() {
                 </Col>
                 {/* 3d model to be displayed in about*/}
                 <Col sm={12} md={4}>
-                    {/* <Spline scene="https://prod.spline.design/cHg2R-qK-fCM3j8f/scene.splinecode" /> */}
+                   <Image className="retro-moonoz" src={moonozStudios} atl="moonoz Studios retro letters" />
                 </Col>
                 <Col md={1}>
-                    empty
                 </Col>
             </Row>
         </section>

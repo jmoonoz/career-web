@@ -9,10 +9,10 @@
     margin-bottom: 2rem;
 }
 .job-link{
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
     &:hover{
         cursor: pointer;
-        color: #064ab0 !important;
+        color: #b9a9ff !important;
     }
 }
 .offcanvas-job-location{
@@ -24,6 +24,16 @@
     margin-bottom:1rem;
 
 }
+.offcanvas{
+    background-color: #1f2a37ba !important;
+    border: 1px solid #374251 !important;
+}
+.button-location{
+    display:flex;
+    justify-content:end !important;
+    margin-top:10px;
+}
+
 
 // mobile screen size
 @media screen and (min-width: 600px){

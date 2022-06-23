@@ -1,52 +1,34 @@
 import React from 'react'
 import { Container, Col, Button, Row } from 'react-bootstrap'
-import '../style/Hero.css';
+import '../style/Hero.scss';
 import Typewriter from "typewriter-effect"
 
 function Hero() {
     return (
         <section id="Hero" className="hero-banner background-tint">
             {/* <h1>this is the hero section</h1> */}
-            <Container >
-                <Row className="hero-content" >
-                    {/* left section of header */}
-                    <Col sm={1}></Col>
-                    <Col sm={5} className="hero-column-content">
-                    {/* row insode of a Column */}
-                                <h1>Moonoz Studios</h1>
-                                <Typewriter
-                                    className="hero-career-text"
-                                    onInit={(typewriter) => {
-                                        typewriter.typeString("UI/UX Design")
-                                            .pauseFor(1000)
-                                            .deleteAll()
-                                            .typeString("Graphic Design")
-                                            .pauseFor(1000)
-                                            .deleteAll()
-                                            .typeString("Animation")
-                                            .start()
-                                    }}
-                                    options={{
-                                        loop: true
-                                    }}
-                                />
-                            <Button>
-                                Learn More
-                            </Button>
-                        {/* <Row>
-                            <Col sm={12}>
-                            </Col>
-                            <Col sm={12}>
-                            </Col>
-                        </Row> */}
-                    </Col>
-                    {/* right section of header */}
-                    <Col sm={6}>
-                        <h2>3d design</h2>
+            <Container className="hero-column-content" >
+                <iframe src='https://my.spline.design/moonozstudioscopy-d21b71dcc6121641de70cbe065d2d50f/' frameborder='0' width='100%' height='100%'></iframe>
+                <Typewriter
+                    className="hero-career-text"
+                    onInit={(typewriter) => {
+                        typewriter.pauseFor(1000)
+                            .typeString("We know where we were yesterday")
+                            .pauseFor(2000)
+                            .deleteAll()
+                            .typeString("Lets see where we can go tomorrow")
+                            .pauseFor(1000)
+                            .deleteAll()
+                            .start()
+                    }}
+                    options={{
+                        loop: true
+                    }}
+                />
+                <Button variant="light" href="#About">
+                    Learn More
+                </Button>
 
-                    </Col>
-                    {/* <div className='hero-fadeBottom'></div> */}
-                </Row>
             </Container>
         </section>
     )

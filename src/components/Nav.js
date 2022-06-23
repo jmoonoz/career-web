@@ -4,7 +4,7 @@ import "../style/navBar.scss";
 
 export default function nav() {
     return (
-        <Navbar fixed="top"  expand="lg" >
+        <Navbar fixed="top" variant="dark" expand="lg" >
             <Container className="d-flex">
                 <Navbar.Brand href="#">Moonoz Studios</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

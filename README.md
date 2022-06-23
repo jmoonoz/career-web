@@ -2,7 +2,13 @@
 
 The following is a mock creation of a studio company version of my graphic freelance design "Moonoz Disenoz". 
 
+# open visual studios 
+<li>Once visual studios is open toggle the integrated terminal</li>
+
 # Download files through a git clone request
+
+in the visual studio terminal type in the following command prompt
+
 <li>git clone https://github.com/jmoonoz/career-web</li>
 
 # Getting Started with Create React App

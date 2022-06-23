@@ -23,4 +23,18 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+Technologies used:
+<ul>
+  <li>ReactJS</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Sass</li>
+  <li>JavaScript</li>
+  <li>React-bootstrap</li>
+  <li>react-typist</li>
+  <li>Spline tool</li>
+  <li>Affinity Designer</li>
+  <li></li>
+</ul>
+
 # career-web

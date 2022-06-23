@@ -77,6 +77,7 @@ function SideMenu(props) {
                 <Offcanvas.Body>
                     <h6>{props.description}</h6>
                     <Form  onSubmit={handleSubmit}>
+                    {/* form to apply */}
                         <Form.Group controlId="name">
                             <Form.Label for="name" >Name</Form.Label>
                             <Form.Control type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} required></Form.Control>
@@ -86,7 +87,7 @@ function SideMenu(props) {
                             <Form.Control type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required></Form.Control>
                         </Form.Group>
                         <Form.Group controlId="linkedin">
-                            <Form.Label for="linkedin" >Linkedin Profile</Form.Label>
+                            <Form.Label for="linkedin url" >Linkedin Profile</Form.Label>
                             <Form.Control type="url" placeholder="Enter your full Linkedin URL" value={linkdin} onChange={(e) => setLinkedin(e.target.value)} required></Form.Control>
                         </Form.Group>
 
@@ -95,6 +96,7 @@ function SideMenu(props) {
                                 Submit Application
                             </Button>
                         </div>
+                        {/* will show a message if all data is submitted correctly */}
                         <div className="message">{message ? <p>{message}</p> : null}</div>
                     </Form>
 

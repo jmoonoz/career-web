@@ -24,7 +24,9 @@ function SideMenu(props) {
     let handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            let res = await fetch("https://localhost:3000/job/"+{id}, {
+            // this is a fake REST api, which will accept whats in the form
+            // only used during this mock, will return a 200 response
+            let res = await fetch("https://httpbin.org/post", {
                 method: "POST",
                 body: JSON.stringify({
                     name: name,
@@ -33,16 +35,19 @@ function SideMenu(props) {
                 }),
             });
 
+            // gets data from back end and converts to json
             let resJson = await res.json();
 
+            // checks status of results
             if (res.status === 200) {
-                setId({id} + 1);
+                setId(id+1);
                 setName("");
                 setEmail("");
                 setLinkedin("");
                 setMessage("sucesfully submitted");
                 console.log(res.status);
             } else {
+                console.log(res.status);
                 setMessage("Some error occured 400");
             }
 
@@ -55,11 +60,9 @@ function SideMenu(props) {
     return (
         <>
             {/* job link that will apprear on the page */}
-            <a href="" onClick={handleShow}>
-                <h5 className="job-title link-detail">
+                <h5 key={props.keyId} className="job-title link-detail" onClick={handleShow}>
                     {props.jobTitle} {props.loc}
                 </h5>
-            </a>
             {/* code for the side menu */}
             <Offcanvas show={show} placement="end" onHide={handleClose}>
                 <Offcanvas.Header closeButton>
@@ -73,7 +76,7 @@ function SideMenu(props) {
                 </Container>
                 <Offcanvas.Body>
                     <h6>{props.description}</h6>
-                    <Form onSubmit={handleSubmit}>
+                    <Form  onSubmit={handleSubmit}>
                         <Form.Group controlId="name">
                             <Form.Label for="name" >Name</Form.Label>
                             <Form.Control type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} required></Form.Control>

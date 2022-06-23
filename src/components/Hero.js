@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Col, Button, Row } from 'react-bootstrap'
+import { Container, Button } from 'react-bootstrap'
 import '../style/Hero.scss';
 import Typewriter from "typewriter-effect"
 
@@ -8,7 +8,7 @@ function Hero() {
         <section id="Hero" className="hero-banner background-tint">
             {/* <h1>this is the hero section</h1> */}
             <Container className="hero-column-content" >
-                <iframe src='https://my.spline.design/moonozstudioscopy-d21b71dcc6121641de70cbe065d2d50f/' className="moonoz-3d" frameborder='0' width='100%' height='100%'></iframe>
+                <iframe src='https://my.spline.design/moonozstudioscopy-d21b71dcc6121641de70cbe065d2d50f/' title="3d Moonoz Studios" className="moonoz-3d" frameBorder='0' width='100%' height='100%'></iframe>
                 <Typewriter
                     className="hero-career-text"
                     onInit={(typewriter) => {

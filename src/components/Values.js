@@ -1,6 +1,8 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import "../style/value.scss"
+// this is where the data is drawn from
+// for the mock up i just hardcoded into a json file
 import data from "../data/values.json"
 
 function Values() {
@@ -31,6 +33,7 @@ function Values() {
             <Row>
                 <Col sm={2} lg={2}>
                 </Col>
+                {/*post results */}
                 {value}
                 <Col lg={2}>
                 </Col>

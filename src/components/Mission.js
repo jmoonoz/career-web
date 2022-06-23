@@ -4,6 +4,7 @@ import Typewriter from "typewriter-effect"
 import "../style/mission.scss"
 
 function Mission() {
+    // brackets for name pronunciation 
     const leftBracket = "[";
     const rightBracket = "]";
     return (

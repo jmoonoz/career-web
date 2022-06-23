@@ -1,10 +1,13 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import teamData from "../data/team_members.json"
+// this is where the data is drawn from
+// for the mock up i just hardcoded into a json file
 import "../style/team.scss"
 
 
 function Team() {
+    // will map out the data form the team file
     const team = teamData.map((data, key) => {
         return (
 

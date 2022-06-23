@@ -1,7 +1,6 @@
 $main-white:  rgb(237, 237, 237);
 
 body{
-  // background-color: #111927 !important;
   background-image: url("https://wallpapercave.com/wp/wp4247401.jpg");
   background-size: cover;
   background-position: center center;
@@ -11,7 +10,7 @@ body{
  
 }
 .sections-background {
-  background-color: #1f2a37b5 !important;
+  background-color: #1f2a37d0 !important;
   border: 1px solid #374251 !important;
 }
 .section-title{
@@ -30,8 +29,8 @@ section{
 }
 .paragraph-text{
   font-size:14px;
-  font-weight:200;
-  color: rgba(237, 237, 237, 0.9);
+  font-weight:600 !important;
+  color: rgba(255, 255, 255, 0.9);
   line-height: 30px;
 }
 .footer-content{

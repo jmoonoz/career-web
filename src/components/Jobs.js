@@ -2,19 +2,22 @@ import React from 'react'
 import SideMenu from './SideMenu'
 import { Col, Row } from "react-bootstrap"
 import "../style/job.scss"
+// this is where the data is drawn from
+// for the mock up i just hardcoded into a json file
 import data from "../data/jobs.json"
 
-const jobInfo = data.map((data, key) => {
-    return (
-        <Col sm={6}>
-            <SideMenu key={key} jobTitle={data.jobTitle} loc={data.location} description={data.desc} />
-        </Col>
-    )
-}
-
-)
 
 function Jobs() {
+    // map out data from the jobs file
+    const jobInfo = data.map((data, key) => {
+        return (
+            <Col key={key} sm={6}>
+                <SideMenu  jobTitle={data.jobTitle} loc={data.location} description={data.desc} />
+            </Col>
+        )
+    }
+    
+    )
     return (
         <section id="Jobs">
             <Row>

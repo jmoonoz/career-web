@@ -74,15 +74,15 @@ function SideMenu(props) {
                     <Form onSubmit={handleSubmit}>
                         <Form.Group controlId="name">
                             <Form.Label for="name" >Name</Form.Label>
-                            <Form.Control type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)}></Form.Control>
+                            <Form.Control type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} required></Form.Control>
                         </Form.Group>
                         <Form.Group controlId="email">
                             <Form.Label for="email">Email</Form.Label>
-                            <Form.Control type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}></Form.Control>
+                            <Form.Control type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required></Form.Control>
                         </Form.Group>
                         <Form.Group controlId="linkedin">
                             <Form.Label for="linkedin" >Linkedin Profile</Form.Label>
-                            <Form.Control type="url" placeholder="Enter your full Linkedin URL" value={linkdin} onChange={(e) => setLinkedin(e.target.value)}></Form.Control>
+                            <Form.Control type="url" placeholder="Enter your full Linkedin URL" value={linkdin} onChange={(e) => setLinkedin(e.target.value)} required></Form.Control>
                         </Form.Group>
 
                         <div className="button-location">

@@ -29,9 +29,8 @@ Technologies used:
   <li>JavaScript</li>
   <li>React-bootstrap</li>
   <li>react-typist</li>
-  <li>Spline tool</li>
+  <li>Spline 3D tool</li>
   <li>Affinity Designer</li>
-  <li></li>
 </ul>
 
 

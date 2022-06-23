@@ -1,3 +1,7 @@
+# Moonoz Studios Career page
+
+The following is a mock creation of a studio company version of my graphic freelance design "Moonoz Disenoz". 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -37,4 +41,4 @@ Technologies used:
   <li></li>
 </ul>
 
-# career-web
+

@@ -16,7 +16,7 @@ in the visual studio terminal type in the following command prompt
 
  **note: be sure to have the latest node version downloaded
  
- ## 'npm install'
+ ### `npm install`
  
  this will install all the node_modules needed 
  

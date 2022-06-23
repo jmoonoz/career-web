@@ -2,6 +2,9 @@
 
 The following is a mock creation of a studio company version of my graphic freelance design "Moonoz Disenoz". 
 
+# Download files through a git clone request
+<li>git clone https://github.com/jmoonoz/career-web</li>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

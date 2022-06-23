@@ -8,6 +8,7 @@ function SideMenu(props) {
 
     // use case for form elements
     const [name, setName] = useState("");
+    const [id, setId] = useState(0)
     const [email, setEmail] = useState("");
     const [linkdin, setLinkedin] = useState("");
     // to show weather results was succesful or not
@@ -23,7 +24,7 @@ function SideMenu(props) {
     let handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            let res = await fetch("https://httpbin.org/post", {
+            let res = await fetch("https://localhost:3000/job/"+{id}, {
                 method: "POST",
                 body: JSON.stringify({
                     name: name,
@@ -35,13 +36,14 @@ function SideMenu(props) {
             let resJson = await res.json();
 
             if (res.status === 200) {
+                setId({id} + 1);
                 setName("");
                 setEmail("");
                 setLinkedin("");
                 setMessage("sucesfully submitted");
                 console.log(res.status);
             } else {
-                setMessage("Some error occured");
+                setMessage("Some error occured 400");
             }
 
         } catch (err) {
@@ -53,7 +55,7 @@ function SideMenu(props) {
     return (
         <>
             {/* job link that will apprear on the page */}
-            <a onClick={handleShow}>
+            <a href="" onClick={handleShow}>
                 <h5 className="job-title link-detail">
                     {props.jobTitle} {props.loc}
                 </h5>

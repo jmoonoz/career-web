@@ -9,7 +9,7 @@ function Team() {
         return (
 
             <div className="grid-item team-member" key={key}  >
-                <img className="team-headshot" src={data.headshot} alt="" />
+                <img role="team memver profile picture" className="team-headshot" src={data.headshot} alt="team member profile picture" />
                 <h6 className="team-name">
                     {data.name}
                 </h6>

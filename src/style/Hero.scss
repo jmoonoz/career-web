@@ -1,6 +1,5 @@
 .hero-banner {
     height: 100vh;
-    /* background-color: rgba(230, 3, 3, 0.725); */
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -13,14 +12,12 @@
   justify-content: space-between !important;
   height:400px;
 }
-.hero-career-text{
-  font-size:16px !important;
-  font-weight: 500 !important;
+.hero-column-content{
+  .Typewriter{
+    font-size: 40px ;
+  }
 }
-.Typewriter{
-  font-size:20px;
-  font-weight: 500;
-}
+
 
 .btn-light {
   color: #fff !important;
@@ -40,4 +37,48 @@
     font-weight: 800;
   }
 }
+.Typewriter{
+      margin-bottom: 1rem;
+}
 
+// mobile screen size modifictations
+// small screens range
+@media screen and (max-width: 320px){
+  .hero-column-content{
+    .Typewriter{
+      font-size: 14px ;
+    }
+  }
+  
+ 
+}
+// mobile medium screens range
+@media screen and (min-width: 321px ) and (max-width:375px){
+  .hero-column-content{
+    .Typewriter{
+      font-size: 16px ;
+    }
+  }
+}
+
+// mobile Larger screens range
+@media screen and (min-width: 376px) and (max-width:425px){
+  .hero-column-content{
+    .Typewriter{
+      font-size: 25px ;
+    }
+  }
+}
+// tablet size screens range
+@media screen and (min-width: 426px) and (max-width:768px){
+  .hero-column-content{
+    .Typewriter{
+      font-size: 30px ;
+    }
+  }
+}
+
+// laptop screen size range
+@media screen and (min-width: 769px) and (max-width:1024px){
+  
+}

@@ -45,3 +45,51 @@ section{
     }
   }
 }
+
+// mobile screen size modifictations
+// small screens range
+@media screen and (max-width: 320px){
+  .section-title{
+    padding-left: 15px;
+    margin-bottom: 15px;
+  }
+}
+// mobile medium screens range
+@media screen and (min-width: 321px ) and (max-width:375px){
+  
+
+}
+
+// mobile Larger screens range
+@media screen and (min-width: 376px) and (max-width:425px){
+
+}
+// tablet size screens range
+@media screen and (max-width:768px){
+  .section-title{
+    padding-left: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  .paragraph-text{
+    margin-bottom: 8px;
+  }
+  .retro-logo{
+    display:flex;
+    justify-content:center;
+  
+  }
+  .break{
+    display: visible;
+  }
+  section{
+    padding: 1rem 0;
+  }
+
+}
+
+// laptop screen size range
+@media screen and (min-width: 769px) and (max-width:1024px){
+  
+}
+

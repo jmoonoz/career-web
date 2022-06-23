@@ -20,7 +20,7 @@ in the visual studio terminal type in the following command prompt
  
  this will install all the node_modules needed 
  
- after so run the following promp
+then execture the following prompt
 
 ### `npm start`
 

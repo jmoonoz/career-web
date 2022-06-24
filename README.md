@@ -18,9 +18,9 @@ in the visual studio terminal type in the following command prompt
  
  ### `npm install`
  
- this will install all the node_modules needed 
+ this will install all the @node_modules needed for the project
  
-then execture the following prompt
+then execute the following prompt
 
 ### `npm start`
 

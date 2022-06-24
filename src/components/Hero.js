@@ -26,7 +26,7 @@ function Hero() {
                         loop: true
                     }}
                 />
-                <Button variant="light" href="#About">
+                <Button role="button" variant="light" href="#About">
                     Learn More
                 </Button>
 

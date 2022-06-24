@@ -14,6 +14,14 @@ in the visual studio terminal type in the following command prompt
 
 # once you have the files downloaded type the following in the integrated terminal 
 
+ **note: be sure to have the latest node version downloaded
+ 
+ ### `npm install`
+ 
+ this will install all the node_modules needed 
+ 
+then execture the following prompt
+
 ### `npm start`
 
 Runs the app in the development mode.\

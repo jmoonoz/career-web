@@ -26,7 +26,7 @@ function SideMenu(props) {
         try {
             // this is a fake REST api, which will accept whats in the form
             // only used during this mock, will return a 200 response
-            let res = await fetch("https://httpbin.org/post", {
+            let res = await fetch("127.0.0.1:3001/job", {
                 method: "POST",
                 body: JSON.stringify({
                     name: name,
@@ -56,6 +56,21 @@ function SideMenu(props) {
         }
     };
 
+    // update parameters for URL
+    // const params = () =>{
+    //    if(show === false){
+    //     history.push({
+    //         pathname:"/"
+    //     })
+    //    }else{
+    //     history.push({
+    //         pathname:'props.jobTitle'
+    //     })
+    //    }
+    // }
+
+
+
 
     return (
         <>
@@ -79,20 +94,20 @@ function SideMenu(props) {
                     <Form  onSubmit={handleSubmit}>
                     {/* form to apply */}
                         <Form.Group controlId="name">
-                            <Form.Label for="name" >Name</Form.Label>
-                            <Form.Control type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} required></Form.Control>
+                            <Form.Label >Name</Form.Label>
+                            <Form.Control htmlFor="name" type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} required></Form.Control>
                         </Form.Group>
                         <Form.Group controlId="email">
-                            <Form.Label for="email">Email</Form.Label>
-                            <Form.Control type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required></Form.Control>
+                            <Form.Label >Email</Form.Label>
+                            <Form.Control htmlFor="email" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required></Form.Control>
                         </Form.Group>
                         <Form.Group controlId="linkedin">
-                            <Form.Label for="linkedin url" >Linkedin Profile</Form.Label>
-                            <Form.Control type="url" placeholder="Enter your full Linkedin URL" value={linkdin} onChange={(e) => setLinkedin(e.target.value)} required></Form.Control>
+                            <Form.Label  >Linkedin Profile</Form.Label>
+                            <Form.Control htmlFor="linkedin url" type="url" placeholder="Enter your full Linkedin URL" value={linkdin} onChange={(e) => setLinkedin(e.target.value)} required></Form.Control>
                         </Form.Group>
 
                         <div className="button-location">
-                            <Button role="submit button" variant="light" type="submit">
+                            <Button htmlFor="submit button" role="submit button" variant="light" type="submit">
                                 Submit Application
                             </Button>
                         </div>

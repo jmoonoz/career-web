@@ -1,14 +1,38 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Col, Row } from 'react-bootstrap'
-import teamData from "../data/team_members.json"
 // this is where the data is drawn from
 // for the mock up i just hardcoded into a json file
 import "../style/team.scss"
 
 
 function Team() {
+    const [data,setData]=useState([]);
+
+    const getData=()=>{
+      fetch('http://localhost:3000/db/team_members.json'
+      ,{
+        headers : { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+         }
+      }
+      )
+        .then(function(response){
+          console.log(response)
+          return response.json();
+        })
+        .then(function(myJson) {
+          console.log(myJson);
+          setData(myJson)
+        });
+    }
+    useEffect(()=>{
+      getData()
+    },[])
+
+
     // will map out the data form the team file
-    const team = teamData.map((data, key) => {
+    const team = data.map((data, key) => {
         return (
 
             <div className="grid-item team-member" key={key}  >
@@ -34,7 +58,7 @@ function Team() {
                 </Col>
             </Row>
             <Row >
-            <Col sm={2}></Col>
+                <Col sm={2}></Col>
                 <Col sm={8}>
                     <div className="grid-container">
                         {team}

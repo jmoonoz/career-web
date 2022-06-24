@@ -4,8 +4,9 @@ import '../style/Hero.scss';
 import Typewriter from "typewriter-effect"
 
 function Hero() {
+    fetch("https://jsonplaceholder.typicode.com/users");
     return (
-        <section id="Hero" className="hero-banner background-tint">
+        <section id="Hero"  className="hero-banner background-tint">
             {/* <h1>this is the hero section</h1> */}
             <Container className="hero-column-content" >
                 <iframe src='https://my.spline.design/moonozstudioscopy-d21b71dcc6121641de70cbe065d2d50f/' title="3d Moonoz Studios" className="moonoz-3d" frameBorder='0' width='100%' height='100%'></iframe>

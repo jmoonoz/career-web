@@ -1,13 +1,37 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import SideMenu from './SideMenu'
 import { Col, Row } from "react-bootstrap"
 import "../style/job.scss"
 // this is where the data is drawn from
 // for the mock up i just hardcoded into a json file
-import data from "../data/jobs.json"
+// import data from "../data/jobs.json"
 
 
 function Jobs() {
+
+    const [data,setData]=useState([]);
+    const getData=()=>{
+      fetch('http://localhost:3000/db/jobs.json'
+      ,{
+        headers : { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+         }
+      }
+      )
+        .then(function(response){
+          console.log(response)
+          return response.json();
+        })
+        .then(function(myJson) {
+          console.log(myJson);
+          setData(myJson)
+        });
+    }
+    useEffect(()=>{
+      getData()
+    },[])
+    
     // map out data from the jobs file
     const jobInfo = data.map((data, key) => {
         return (

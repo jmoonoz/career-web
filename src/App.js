@@ -13,7 +13,7 @@ import { Container } from "react-bootstrap"
 function App() {
 
   return (
-    <div className="App">
+    <div className="App" href="/">
       <Nav />
       <Hero />
       <Container className="sections-background">

@@ -39,7 +39,7 @@ function SideMenu(props) {
                     linkedin: linkdin
                 }),
             });
-            
+
             // checks status of results and clears useStates
             if (res.status === 200) {
                 setId(id+1);
@@ -47,9 +47,9 @@ function SideMenu(props) {
                 setEmail("");
                 setLinkedin("");
                 setMessage("sucesfully submitted");
-                console.log(res.status);
+                // console.log(res.status);
             } else {
-                console.log(res.status);
+                // console.log(res.status);
                 setMessage("Submit failed");
             }
 

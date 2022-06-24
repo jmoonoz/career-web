@@ -39,6 +39,7 @@ Technologies used:
   <li>react-typist</li>
   <li>Spline 3D tool</li>
   <li>Affinity Designer</li>
+  <li>Webhook.site</li>
 </ul>
 
 

@@ -26,8 +26,9 @@ function SideMenu(props) {
         try {
             // this is a fake REST api, which will accept whats in the form
             // only used during this mock, will return a 200 response
-            let res = await fetch("127.0.0.1:3001/job", {
+            let res = await fetch("http://localhost:3000/db/jobs.json", {
                 method: "POST",
+                headers: { 'Content-Type':"application/json"},
                 body: JSON.stringify({
                     name: name,
                     email: email,
@@ -75,7 +76,7 @@ function SideMenu(props) {
                 </Container>
                 <Offcanvas.Body>
                     <h6>{props.description}</h6>
-                    <Form  onSubmit={handleSubmit}>
+                    <Form role="form" onSubmit={handleSubmit}>
                     {/* form to apply */}
                         <Form.Group controlId="name">
                             <Form.Label >Name</Form.Label>

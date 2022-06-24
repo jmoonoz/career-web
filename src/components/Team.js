@@ -8,6 +8,9 @@ import "../style/team.scss"
 function Team() {
     const [data,setData]=useState([]);
 
+
+// gathered data from server
+//files are stored locally, just used localhost to pull data
     const getData=()=>{
       fetch('http://localhost:3000/db/team_members.json'
       ,{
@@ -36,7 +39,7 @@ function Team() {
         return (
 
             <div className="grid-item team-member" key={key}  >
-                <img role="team memver profile picture" className="team-headshot" src={data.headshot} alt="team member profile picture" />
+                <img className="team-headshot" src={data.headshot} aria-label="team member faceshot"/>
                 <h6 className="team-name">
                     {data.name}
                 </h6>

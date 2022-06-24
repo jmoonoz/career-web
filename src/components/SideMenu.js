@@ -26,20 +26,21 @@ function SideMenu(props) {
         try {
             // this is a fake REST api, which will accept whats in the form
             // only used during this mock, will return a 200 response
-            let res = await fetch("http://localhost:3000/db/jobs.json", {
-                method: "POST",
-                headers: { 'Content-Type':"application/json"},
+            let res = await fetch('https://webhook.site/3a6ffaf7-0cad-42d5-9aa2-dc50f9745444', {
+                method: 'POST',
+                mod: 'no-cors',
+                headers: { 
+                    'Accept': 'application/json',
+                    'Content-Type':"application/json"
+            },
                 body: JSON.stringify({
                     name: name,
                     email: email,
-                    linkdin: linkdin
+                    linkedin: linkdin
                 }),
             });
-
-            // gets data from back end and converts to json
-            let resJson = await res.json();
-
-            // checks status of results
+            
+            // checks status of results and clears useStates
             if (res.status === 200) {
                 setId(id+1);
                 setName("");
@@ -49,7 +50,7 @@ function SideMenu(props) {
                 console.log(res.status);
             } else {
                 console.log(res.status);
-                setMessage("Some error occured 400");
+                setMessage("Submit failed");
             }
 
         } catch (err) {

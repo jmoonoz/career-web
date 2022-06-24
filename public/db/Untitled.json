@@ -1,0 +1,99 @@
+{
+  "uuid": "069e53fd-0e07-45f0-b70d-f9fe50f143ef",
+  "lastMigration": 20,
+  "name": "Untitled",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "4e66df65-ce8b-44cb-a63c-70d7a06f878c",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "db/job",
+      "responses": [
+        {
+          "uuid": "a8654c88-288b-44aa-8f4b-a3dc0e9afa68",
+          "body": "{\n  \"id\":\"0\",\n  \"fullName\":\"joel\",\n  \"linkedin\": \"\"\n  \n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "application submitted",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "b9ac7b80-7758-4970-a5f2-e87541354415",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "member",
+      "responses": [
+        {
+          "uuid": "2779b78f-aef2-468a-90ae-87c1cb34a0ed",
+          "body": "{\n  \"id\":\"1\",\n  \"name\":\"bob\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}

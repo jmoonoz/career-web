@@ -56,22 +56,6 @@ function SideMenu(props) {
         }
     };
 
-    // update parameters for URL
-    // const params = () =>{
-    //    if(show === false){
-    //     history.push({
-    //         pathname:"/"
-    //     })
-    //    }else{
-    //     history.push({
-    //         pathname:'props.jobTitle'
-    //     })
-    //    }
-    // }
-
-
-
-
     return (
         <>
             {/* job link that will apprear on the page */}

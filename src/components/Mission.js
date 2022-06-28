@@ -17,7 +17,7 @@ function Mission() {
                     <h1 className="section-title">
                         Mooñoz Studios 
                         <br className="break"/>
-                        {/* {leftBracket} */}
+                        {leftBracket}
                         {/* <Typewriter
                             className="type-text"
                             onInit={(typewriter) => {
@@ -30,7 +30,7 @@ function Mission() {
                                 loop: true
                             }}
                         /> */}
-                        {/* {rightBracket} */}
+                        {rightBracket}
                     </h1>
 
                 </Col>

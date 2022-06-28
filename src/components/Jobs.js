@@ -10,8 +10,9 @@ import "../style/job.scss"
 function Jobs() {
 
     const [data,setData]=useState([]);
+    const url = "https://careerwebpage.herokuapp.com"
     const getData=()=>{
-      fetch('http://localhost:3000/db/jobs.json'
+      fetch({url}+'/db/jobs.json'
       ,{
         headers : { 
           'Content-Type': 'application/json',

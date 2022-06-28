@@ -7,12 +7,13 @@ import "../style/team.scss"
 
 function Team() {
     const [data,setData]=useState([]);
+    const url = "https://careerwebpage.herokuapp.com"
 
 
 // gathered data from server
 //files are stored locally, just used localhost to pull data
     const getData=()=>{
-      fetch('http://localhost:3000/db/team_members.json'
+      fetch({url}+'/db/team_members.json'
       ,{
         headers : { 
           'Content-Type': 'application/json',

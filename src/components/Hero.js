@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Button } from 'react-bootstrap'
 import '../style/Hero.scss';
-import Typewriter from "typewriter-effect"
+// import Typewriter from "typewriter-effect"
 
 function Hero() {
     fetch("https://jsonplaceholder.typicode.com/users");
@@ -10,7 +10,7 @@ function Hero() {
             {/* <h1>this is the hero section</h1> */}
             <Container className="hero-column-content" >
                 <iframe src='https://my.spline.design/moonozstudioscopy-d21b71dcc6121641de70cbe065d2d50f/' title="3d Moonoz Studios" className="moonoz-3d" frameBorder='0' width='100%' height='100%'></iframe>
-                <Typewriter
+                {/* <Typewriter
                     className="hero-career-text"
                     onInit={(typewriter) => {
                         typewriter.pauseFor(1000)
@@ -25,7 +25,7 @@ function Hero() {
                     options={{
                         loop: true
                     }}
-                />
+                /> */}
                 <Button role="button" variant="light" href="#About">
                     Learn More
                 </Button>

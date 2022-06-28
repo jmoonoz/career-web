@@ -1,7 +1,7 @@
 {
   "uuid": "069e53fd-0e07-45f0-b70d-f9fe50f143ef",
   "lastMigration": 20,
-  "name": "Untitled",
+  "name": "job-DB",
   "endpointPrefix": "",
   "latency": 0,
   "port": 3001,
@@ -11,7 +11,7 @@
       "uuid": "4e66df65-ce8b-44cb-a63c-70d7a06f878c",
       "documentation": "",
       "method": "post",
-      "endpoint": "db/job",
+      "endpoint": "job",
       "responses": [
         {
           "uuid": "a8654c88-288b-44aa-8f4b-a3dc0e9afa68",

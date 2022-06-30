@@ -6,34 +6,37 @@ import "../style/team.scss"
 
 
 function Team() {
-    const [data,setData]=useState([]);
+    const [data, setData] = useState([]);
     // const url = "https://careerwebpage.herokuapp.com"
 
 
-// gathered data from server
-//files are stored locally, just used localhost to pull data
-    const getData=()=>{
-      fetch('./db/team_members.json'
-      ,{
-        headers : { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-         }
-      }
-      
-      )
-        .then(function(response){
-        //   console.log(response)
-          return response.json();
-        })
-        .then(function(myJson) {
-        //   console.log(myJson);
-          setData(myJson)
-        });
+    // gathered data from server
+    //files are stored locally, just used localhost to pull data
+    const url = window.location.href;
+    const fullUrl = url + "db/team_members.json";
+    console.log(fullUrl);
+    const getData = () => {
+        fetch(fullUrl
+            , {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            }
+
+        )
+            .then(function (response) {
+                //   console.log(response)
+                return response.json();
+            })
+            .then(function (myJson) {
+                //   console.log(myJson);
+                setData(myJson)
+            });
     }
-    useEffect(()=>{
-      getData()
-    },[])
+    useEffect(() => {
+        getData()
+    }, [])
 
 
     // will map out the data form the team file
@@ -41,7 +44,7 @@ function Team() {
         return (
 
             <div className="grid-item team-member" key={key}  >
-                <img className="team-headshot" src={data.headshot} aria-label="team member faceshot"/>
+                <img className="team-headshot" src={data.headshot} aria-label="team member faceshot" />
                 <h6 className="team-name">
                     {data.name}
                 </h6>

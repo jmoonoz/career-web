@@ -10,8 +10,11 @@ import "../style/job.scss"
 function Jobs() {
 
     const [data,setData]=useState([]);
+    const url = window.location.href;
+    const fullUrl = url + "db/jobs.json";
+    // console.log(fullUrl);
     const getData=()=>{
-      fetch('./db/jobs.json'
+      fetch(fullUrl
       ,{
         headers : { 
           'Content-Type': 'application/json',

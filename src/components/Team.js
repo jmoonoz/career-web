@@ -13,7 +13,7 @@ function Team() {
 // gathered data from server
 //files are stored locally, just used localhost to pull data
     const getData=()=>{
-      fetch('https://careerwebpage.herokuapp.com/db/team_members.json'
+      fetch('https://62bd38e106c0710009bed149--legendary-cobbler-b57365.netlify.app/db/team_members.json'
       ,{
         headers : { 
           'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ function Jobs() {
 
     const [data,setData]=useState([]);
     const getData=()=>{
-      fetch('https://careerwebpage.herokuapp.com/db/jobs.json'
+      fetch('https://62bd38e106c0710009bed149--legendary-cobbler-b57365.netlify.app/db/jobs.json'
       ,{
         headers : { 
           'Content-Type': 'application/json',

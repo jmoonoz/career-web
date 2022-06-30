@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
-// import Typewriter from "typewriter-effect"
+import Typewriter from "typewriter-effect"
 import "../style/mission.scss"
 
 function Mission() {
@@ -18,7 +18,7 @@ function Mission() {
                         Mooñoz Studios 
                         <br className="break"/>
                         {leftBracket}
-                        {/* <Typewriter
+                        <Typewriter
                             className="type-text"
                             onInit={(typewriter) => {
                                 typewriter.typeString(" moon-yoos Stoo-De-OOs")
@@ -29,7 +29,7 @@ function Mission() {
                             options={{
                                 loop: true
                             }}
-                        /> */}
+                        />
                         {rightBracket}
                     </h1>
 

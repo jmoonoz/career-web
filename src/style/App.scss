@@ -7,7 +7,6 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: $main-white!important;
- 
 }
 .sections-background {
   background-color: #1f2a37d0 !important;
@@ -52,6 +51,7 @@ section{
     padding-left: 15px;
     margin-bottom: 15px;
   }
+
 }
 // mobile medium screens range
 @media screen and (min-width: 321px ) and (max-width:375px){
@@ -60,7 +60,14 @@ section{
 }
 
 // mobile Larger screens range
-@media screen and (min-width: 376px) and (max-width:425px){
+@media screen and (max-width:425px){
+  body{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    
+  }
 
 }
 // tablet size screens range

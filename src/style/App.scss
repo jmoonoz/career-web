@@ -63,8 +63,8 @@ section{
 @media screen and (max-width:425px){
   body{
     background-size: cover;
-    background-position: center center;
-    background-repeat: repeat-y;
+    // background-position: center center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     
   }
